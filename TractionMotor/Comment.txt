@@ -1,0 +1,15 @@
+﻿Works to DO
+	1.After Finishing Program search 'ModifyHereAfterFinishingProgram
+
+
+
+
+
+
+888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+For adding any Item to MonitorItems (For showing in Monitor Labels in frmMain or any other use)
+ 1. add your item to it's Enum (module main.MonitorItems)
+ 2. Modify frmMain.MnuPopupClick
+ 3. Modify frmMain.SetLblMonitorText
+
+888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888

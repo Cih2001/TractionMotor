@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ControlPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="ChildMainLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="ChildMainSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">484, 523</Value>
+    </Setting>
+    <Setting Name="Motor1Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM4</Value>
+    </Setting>
+    <Setting Name="Motor1BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="Motor1Parity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Motor1DataBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Motor1StopBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Motor2Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM5</Value>
+    </Setting>
+    <Setting Name="Motor2BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="Motor2Parity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Motor2DataBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Motor2StopBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Motor3Port" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM6</Value>
+    </Setting>
+    <Setting Name="Motor3BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="Motor3Parity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Motor3DataBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Motor3StopBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Motor1Diameter" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">110</Value>
+    </Setting>
+    <Setting Name="Motor1Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wheel1</Value>
+    </Setting>
+    <Setting Name="Motor2Diameter" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">110</Value>
+    </Setting>
+    <Setting Name="Motor2Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wheel2</Value>
+    </Setting>
+    <Setting Name="Motor3Diameter" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">110</Value>
+    </Setting>
+    <Setting Name="Motor3Name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Wheel3</Value>
+    </Setting>
+    <Setting Name="Area1Serie1Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Area1Serie2Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Area1Serie3Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Area2Serie1Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Area2Serie2Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Area2Serie3Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Area3Serie1Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="Area3Serie2Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="Area3Serie3Motor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

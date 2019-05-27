@@ -1,0 +1,265 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Poisen_Button"
+	x:Name="UserControl"
+	d:DesignWidth="160" d:DesignHeight="160" Cursor="Hand">
+	<UserControl.Resources>
+		<Storyboard x:Key="OnMouseEnter1">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(BlurEffect.Radius)" Storyboard.TargetName="canvas">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.BlurRadius)" Storyboard.TargetName="Group">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="27">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Color)" Storyboard.TargetName="Group">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF898989">
+					<EasingColorKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingColorKeyFrame.EasingFunction>
+				</EasingColorKeyFrame>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_80">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFD7575"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_38">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF62FB44"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFB8B8B"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF8AFB74"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseLeave1">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_38">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF78F55F"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_80">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFF99999"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFFABAB"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFA0F88F"/>
+			</ColorAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(BlurEffect.Radius)" Storyboard.TargetName="canvas">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.ShadowDepth)" Storyboard.TargetName="Group">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.BlurRadius)" Storyboard.TargetName="Group">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFBFBFB"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFDDDDDD"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FF79F560"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFF99B9B"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFFFE2E2"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0:0:0.5" Value="#FFD9FDD3"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseDown1">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF1A1A1A"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF3F3F3F"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF5A4040"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="Black"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF294124"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_80">
+				<EasingColorKeyFrame KeyTime="0" Value="Red"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_38">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF5F98F5"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF639BF5"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFF0909"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Color)" Storyboard.TargetName="Group">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF0062BC"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Key="OnMouseUp1">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFE9E9E9"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_7">
+				<EasingColorKeyFrame KeyTime="0" Value="White"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_38">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF78F55F"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_38">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFEFFFE"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFFABAB"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_59_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFBDEDE"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_80">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFF99898"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFA0F88F"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="Path_84_Copy">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFD9FCD3"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF79F860"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="path1">
+				<EasingColorKeyFrame KeyTime="0" Value="#FFFE4B4B"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Effect).(DropShadowEffect.Color)" Storyboard.TargetName="Group">
+				<EasingColorKeyFrame KeyTime="0" Value="#FF7B7B7B"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+		<LinearGradientBrush x:Key="Brush1" EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FFD1E0F0" Offset="0.004"/>
+			<GradientStop Color="#FFC7D6E7" Offset="0.018"/>
+			<GradientStop Color="#FFE8F0F7" Offset="0.245"/>
+			<GradientStop Color="#FFC0D6EB" Offset="0.248"/>
+			<GradientStop Color="#FFB8D1E9" Offset="0.412"/>
+			<GradientStop Color="#FFA9C2DA" Offset="0.44"/>
+			<GradientStop Color="#FFA9C2DA" Offset="0.782"/>
+			<GradientStop Color="#FFB7D0E8" Offset="0.798"/>
+			<GradientStop Color="#FFB8D1E9" Offset="0.937"/>
+			<GradientStop Color="#FFA8C0D9" Offset="0.958"/>
+		</LinearGradientBrush>
+	</UserControl.Resources>
+	<UserControl.Triggers>
+		<EventTrigger RoutedEvent="Mouse.MouseEnter">
+			<BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseLeave">
+			<BeginStoryboard x:Name="OnMouseLeave1_BeginStoryboard" Storyboard="{StaticResource OnMouseLeave1}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseDown">
+			<BeginStoryboard x:Name="OnMouseDown1_BeginStoryboard" Storyboard="{StaticResource OnMouseDown1}"/>
+		</EventTrigger>
+		<EventTrigger RoutedEvent="Mouse.MouseUp">
+			<BeginStoryboard x:Name="OnMouseUp1_BeginStoryboard" Storyboard="{StaticResource OnMouseUp1}"/>
+		</EventTrigger>
+	</UserControl.Triggers>
+
+	<Grid x:Name="LayoutRoot">
+		<Viewbox x:Name="Group" Margin="-64,0,-53.895,8">
+			<Viewbox.Effect>
+				<DropShadowEffect ShadowDepth="0" BlurRadius="0" Color="#FF7A7A7A"/>
+			</Viewbox.Effect>
+			<Canvas x:Name="canvas" Width="330" Height="190">
+				<Canvas.Effect>
+					<BlurEffect/>
+				</Canvas.Effect>
+				<Path x:Name="Path_7" Width="150.855" Height="174" Canvas.Left="96" Canvas.Top="11" Stretch="Fill" Data="F1 M 158.5,11C 159.976,11.0283 161.452,11.0566 162.929,11.0848C 164.405,11.1131 165.881,11.1414 167.357,11.1696C 168.833,11.1979 170.31,11.2262 171.786,11.2545C 173.262,11.2828 174.738,11.311 176.214,11.3393C 177.69,11.3676 179.167,11.3958 180.643,11.4241C 182.119,11.4524 183.595,11.4807 185.071,11.5089C 186.548,11.5372 188.086,11.1695 189.5,11.5938C 190.368,11.8543 190.643,13.1427 191.5,13.4375C 192.763,13.8716 194.229,13.2459 195.5,13.6563C 196.336,13.9263 196.687,15.0398 197.5,15.375C 198.43,15.7588 199.561,15.3551 200.5,15.7188C 201.295,16.0268 201.733,16.9409 202.5,17.3125C 203.109,17.6074 203.915,17.3163 204.5,17.6563C 205.637,18.3171 206.344,19.5909 207.5,20.2188C 208.564,20.7966 209.942,20.5991 211,21.1875C 211.685,21.5687 211.875,22.5263 212.5,23C 213.239,23.5599 214.276,23.6396 215,24.2188C 215.973,24.9975 216.527,26.2213 217.5,27C 218.224,27.5791 219.3,27.6114 220,28.2188C 221.504,29.5233 222.674,31.1701 224.01,32.6458C 225.347,34.1215 226.684,35.5972 228.021,37.0729C 229.358,38.5486 230.841,39.9039 232.031,41.5C 232.58,42.236 232.739,43.199 233.188,44C 234.095,45.6193 235.125,47.1667 236.094,48.75C 237.063,50.3333 238.17,51.8398 239,53.5C 239.594,54.6877 239.896,56 240.344,57.25C 240.792,58.5 241.24,59.75 241.688,61C 242.135,62.25 242.583,63.5 243.031,64.75C 243.479,66 244.044,67.214 244.375,68.5C 244.605,69.3941 244.594,70.3333 244.703,71.25C 244.813,72.1667 244.813,73.1031 245.031,74C 245.404,75.53 246.207,76.9472 246.469,78.5C 246.713,79.9464 246.51,81.4333 246.531,82.9C 246.552,84.3667 246.573,85.8333 246.594,87.3C 246.615,88.7667 246.635,90.2333 246.656,91.7C 246.677,93.1667 246.698,94.6333 246.719,96.1C 246.74,97.5667 246.971,99.0455 246.781,100.5C 246.602,101.876 245.861,103.132 245.625,104.5C 245.426,105.651 245.531,106.833 245.484,108C 245.438,109.167 245.718,110.394 245.344,111.5C 245.062,112.333 243.961,112.688 243.625,113.5C 243.306,114.271 243.531,115.167 243.484,116C 243.438,116.833 243.662,117.729 243.344,118.5C 243.008,119.312 241.96,119.687 241.625,120.5C 241.241,121.43 241.645,122.561 241.281,123.5C 240.973,124.295 240.021,124.715 239.688,125.5C 239.29,126.435 239.575,127.575 239.156,128.5C 238.497,129.955 237.396,131.167 236.516,132.5C 235.635,133.833 234.64,135.098 233.875,136.5C 233.45,137.278 233.486,138.28 232.969,139C 232.487,139.67 231.514,139.855 231,140.5C 230.422,141.225 230.337,142.258 229.781,143C 229.316,143.621 228.466,143.879 228,144.5C 227.444,145.242 227.384,146.296 226.781,147C 225.584,148.399 224.052,149.472 222.688,150.708C 221.323,151.944 219.958,153.181 218.594,154.417C 217.229,155.653 216.008,157.069 214.5,158.125C 213.774,158.633 212.644,158.422 212,159.031C 211.015,159.963 210.2,161.184 209.875,162.5C 209.523,163.925 209.996,165.433 210.056,166.9C 210.117,168.367 210.177,169.833 210.238,171.3C 210.298,172.767 210.358,174.233 210.419,175.7C 210.479,177.167 210.54,178.633 210.6,180.1C 210.66,181.567 210.721,183.033 210.781,184.5L 158.5,185C 158.389,183.444 158.278,181.889 158.167,180.333C 158.056,178.778 157.944,177.222 157.833,175.667C 157.722,174.111 158.614,172.092 157.5,171C 156.429,169.95 154.5,170.952 153,170.929C 151.5,170.905 150,170.881 148.5,170.857C 147,170.833 145.5,170.81 144,170.786C 142.5,170.762 141,170.738 139.5,170.714C 138,170.69 136.5,170.667 135,170.643C 133.5,170.619 132,170.595 130.5,170.571C 129,170.548 127.405,171.026 126,170.5C 125.298,170.237 124.957,169.25 124.969,168.5C 124.981,167.74 125.95,167.251 126.063,166.5C 126.278,165.057 125.969,163.583 125.922,162.125C 125.875,160.667 125.828,159.208 125.781,157.75C 125.734,156.292 125.688,154.833 125.641,153.375C 125.594,151.917 126.123,150.319 125.5,149C 125.104,148.162 123.755,148.319 123,147.781C 121.573,146.766 120.333,145.51 119,144.375C 117.667,143.24 116.228,142.218 115,140.969C 113.552,139.495 112.333,137.813 111,136.234C 109.667,134.656 108.209,133.176 107,131.5C 106.458,130.748 106.198,129.828 105.781,129C 105.135,127.717 104.469,126.444 103.813,125.167C 103.156,123.889 102.5,122.611 101.844,121.333C 101.188,120.056 100.4,118.837 99.875,117.5C 99.3699,116.212 99.1389,114.833 98.7708,113.5C 98.4028,112.167 98.0347,110.833 97.6667,109.5C 97.2986,108.167 96.7506,106.87 96.5625,105.5C 96.3585,104.014 96.5208,102.5 96.5,101L 96,100.5C 96.033,99 96.066,97.5 96.099,96C 96.1319,94.5 96.1649,93 96.1979,91.5C 96.2309,90 96.2639,88.5 96.2969,87C 96.3299,85.5 96.3629,84 96.3958,82.5C 96.4288,81 96.4618,79.5 96.4948,78C 96.5278,76.5 96.1641,74.9375 96.5938,73.5C 96.8534,72.6312 98.1427,72.3575 98.4375,71.5C 98.8716,70.2372 98.2459,68.7707 98.6563,67.5C 98.9264,66.6635 100.04,66.3126 100.375,65.5C 100.759,64.5695 100.355,63.4385 100.719,62.5C 101.027,61.7051 101.979,61.2845 102.313,60.5C 102.71,59.5654 102.352,58.3885 102.844,57.5C 103.685,55.9796 105.234,54.9529 106.188,53.5C 106.569,52.9186 106.405,52.0851 106.781,51.5C 107.711,50.0527 108.955,48.8333 110.042,47.5C 111.128,46.1667 112.215,44.8333 113.302,43.5C 114.389,42.1667 115.375,40.7449 116.563,39.5C 117.45,38.5695 118.439,37.7258 119.5,37C 120.265,36.4767 121.258,36.3375 122,35.7813C 122.621,35.3155 122.879,34.4657 123.5,34C 124.242,33.4438 125.172,33.198 126,32.7813C 127.283,32.1355 128.556,31.4688 129.833,30.8125C 131.111,30.1563 132.389,29.5 133.667,28.8438C 134.944,28.1875 136.163,27.3996 137.5,26.875C 138.788,26.3699 140.167,26.1389 141.5,25.7708C 142.833,25.4028 144.167,25.0347 145.5,24.6667C 146.833,24.2986 148.133,23.7723 149.5,23.5625C 150.653,23.3855 151.833,23.5313 153,23.5156C 154.167,23.5 155.357,23.701 156.5,23.4688C 157.083,23.3503 157.805,23.0623 158,22.5C 158.419,21.2917 158.111,19.9444 158.167,18.6667C 158.222,17.3889 158.278,16.1111 158.333,14.8333C 158.389,13.5556 158.444,12.2778 158.5,11 Z " StrokeThickness="2" Stroke="#FF747474">
+					<Path.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FFDEDEDE" Offset="0"/>
+							<GradientStop Color="White" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="Path_7_Glass" Data="M1,0.99999998 L7.5488503,7.1958314 C28.943598,25.397767 63.691486,37.988511 103.71374,40.324647 L110.28076,40.515229 109.37337,41.618882 C109.01074,42.198411 108.72952,42.825364 108.56917,43.4758 108.22184,44.884416 108.68857,46.375077 108.74777,47.825211 108.80797,49.275361 108.86717,50.724504 108.92737,52.174653 108.98657,53.624787 109.04577,55.07393 109.10596,56.524064 109.16517,57.974214 109.22535,59.423356 109.28457,60.873506 109.34377,62.32364 109.40395,63.772783 109.46316,65.222917 L57.875446,65.71718 C57.765926,64.179063 57.656391,62.641938 57.546871,61.103807 57.437336,59.566697 57.32682,58.028581 57.217285,56.491456 57.107765,54.953324 57.987934,52.957536 56.88871,51.878099 55.831913,50.840165 53.928489,51.830644 52.448383,51.807908 50.968273,51.784181 49.488162,51.760453 48.008056,51.736726 46.527946,51.713014 45.047839,51.690278 43.567729,51.666551 42.087619,51.642823 40.607512,51.619111 39.127402,51.595384 37.647296,51.571656 36.167185,51.548936&#xd;&#xa;34.687075,51.525209 33.206969,51.501481 31.726859,51.477754 30.246748,51.454026 28.766642,51.431291 27.192791,51.903794 25.806423,51.383836 25.11373,51.123872 24.777254,50.14821 24.789099,49.406831 24.80094,48.655564 25.757084,48.172196 25.868593,47.429826 26.080736,46.003419 25.775837,44.546342 25.729454,43.105103 25.683081,41.663865 25.636707,40.221635 25.590326,38.780396 25.543951,37.339158 25.498564,35.896912 25.452185,34.455674 25.40581,33.014451&#xd;&#xa;25.927794,31.434815 25.313053,30.130967 24.9223,29.302598 23.59119,29.457795 22.846205,28.92598 21.438127,27.922654 20.214573,26.681077 18.899248,25.559128 17.583925,24.43718 16.164005,23.426926 14.952293,22.192276 13.523496,20.735215 12.320659,19.072556 11.005337,17.511696 9.6900114,15.951851 8.251346,14.488846 7.0583775,12.832115 6.5235665,12.088761 6.2670119,11.179337 5.8555433,10.360855 5.2181122,9.0926057 4.5609438,7.8342363 3.913643,6.5719148&#xd;&#xa;3.2653514,5.3086014 2.6180521,4.0452881 1.9707537,2.7819824 z" Fill="#FF646464" Height="66.717" Canvas.Left="100.796" Stretch="Fill" StrokeThickness="2" Canvas.Top="118.283" Width="111.281" Opacity="0.185"/>
+				<Path x:Name="Path_38" Width="49" Height="119.656" Canvas.Left="109" Canvas.Top="37.3438" Stretch="Fill" Data="F1 M 157.5,37.3438L 158,156.5L 140.5,157C 140.411,155.708 140.323,154.417 140.234,153.125C 140.146,151.833 140.057,150.542 139.969,149.25C 139.88,147.958 139.792,146.667 139.703,145.375C 139.615,144.083 140.191,142.553 139.438,141.5C 138.572,140.289 136.792,140.135 135.469,139.453C 134.146,138.771 132.688,138.303 131.5,137.406C 129.753,136.088 128.333,134.385 126.75,132.875C 125.167,131.365 123.435,129.996 122,128.344C 121.281,127.516 120.996,126.382 120.344,125.5C 119.302,124.092 117.884,122.974 116.938,121.5C 116.153,120.278 115.785,118.833 115.208,117.5C 114.632,116.167 114.056,114.833 113.479,113.5C 112.903,112.167 112.206,110.879 111.75,109.5C 111.393,108.422 111.285,107.278 111.052,106.167C 110.819,105.056 110.587,103.944 110.354,102.833C 110.122,101.722 109.854,100.618 109.656,99.5C 109.569,99.005 109.552,98.5 109.5,98L 109,97.5C 109.06,95.9167 109.12,94.3333 109.18,92.75C 109.24,91.1667 109.299,89.5833 109.359,88C 109.419,86.4167 109.479,84.8333 109.539,83.25C 109.599,81.6667 109.316,80.0324 109.719,78.5C 109.935,77.6755 110.994,77.2907 111.313,76.5C 111.625,75.7241 111.458,74.8333 111.531,74C 111.604,73.1667 111.447,72.2796 111.75,71.5C 112.054,70.7175 112.96,70.2756 113.281,69.5C 113.738,68.3979 113.526,67.0809 114.031,66C 114.742,64.4784 115.92,63.2222 116.865,61.8333C 117.809,60.4444 118.753,59.0556 119.698,57.6667C 120.642,56.2778 121.49,54.8175 122.531,53.5C 123.253,52.587 124.108,51.7829 124.969,51C 126.344,49.7493 127.813,48.6042 129.234,47.4063C 130.656,46.2083 131.954,44.8456 133.5,43.8125C 134.078,43.4261 134.894,43.5597 135.5,43.2188C 136.584,42.609 137.362,41.5025 138.5,41C 139.912,40.3763 141.512,40.3177 143,39.9063C 144.264,39.5568 145.5,39.1146 146.75,38.7188C 148,38.3229 149.209,37.7594 150.5,37.5313C 151.649,37.3281 152.833,37.4688 154,37.4375C 155.167,37.4063 156.333,37.375 157.5,37.3438 Z ">
+					<Path.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FF78F55F" Offset="0"/>
+							<GradientStop Color="White" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="path" Data="M2.5306812,2.8421709E-14 L2.5343466,0.068656921 C4.7000936,20.238899 22.710359,35.978889 44.607499,35.978889 L48.804032,35.778465 48.999997,82.478889 31.499999,82.978889 C31.410999,81.68689 31.322999,80.395897 31.233999,79.103897 31.145999,77.811897 31.056998,76.520897 30.968999,75.228905 30.879998,73.936905 30.791999,72.645905 30.702998,71.353912 30.614999,70.061913 31.190999,68.531914 30.437999,67.478912 29.572,66.267914 27.791999,66.113914 26.468999,65.431915 25.145999,64.749924 23.687999,64.281921 22.499999,63.384926 20.753,62.066925 19.333,60.36393 17.749999,58.853928 16.166999,57.343933 14.435,55.974937&#xd;&#xa;12.999999,54.322937 12.281,53.494942 11.996,52.360939 11.344,51.478943 10.302,50.070946 8.8839996,48.95295 7.9379995,47.478951 7.1529997,46.25695 6.7849997,44.811951 6.2079996,43.478958 5.6319998,42.145958 5.0559999,40.811958 4.478999,39.478966 3.9029999,38.145966 3.2059999,36.857964 2.7500005,35.478966 2.3929999,34.40097 2.2849999,33.256973 2.0519996,32.145973 1.8189999,31.034973 1.587,29.922981 1.3540007,28.811981 1.122,27.700981&#xd;&#xa;0.85399995,26.596985 0.65599988,25.478989 0.56899999,24.983986 0.55199991,24.478989 0.49999975,23.978989 L0,23.478989 C0.059999941,21.895691 0.11999988,20.312294 0.18000006,18.728996 0.24,17.145699 0.29900002,15.562302 0.35899912,13.979004 0.41900002,12.395706 0.47899996,10.812309 0.53899931,9.2290115 0.59899996,7.6457138 0.31599998,6.0114174 0.71899937,4.4790192 0.93499992,3.6545219 1.9939999,3.269722 2.3130003,2.479023 2.4689999,2.0910721 2.5052499,1.6744003 2.5116259,1.2505531 z" Fill="#FF78F55F" Height="82.979" Canvas.Left="109" Stretch="Fill" Canvas.Top="74.021" Width="49">
+					<Path.OpacityMask>
+						<RadialGradientBrush Center="0.872,0.893" GradientOrigin="0.872,0.893" RadiusY="0.68" RadiusX="1.118">
+							<GradientStop Color="#91000000" Offset="1"/>
+							<GradientStop Color="#4FFFFFFF"/>
+						</RadialGradientBrush>
+					</Path.OpacityMask>
+				</Path>
+				<Path x:Name="Path_59" Width="26.1776" Height="26.6105" Canvas.Left="130" Canvas.Top="107.687" Stretch="Fill" Fill="#FF747474" Data="F1 M 137,109.625L 136,108.5L 136.5,108C 137.167,108.344 137.752,108.972 138.5,109.031C 139.36,109.1 140.167,108.583 141,108.359C 141.833,108.135 142.637,107.685 143.5,107.688C 144.364,107.69 145.167,108.146 146,108.375C 146.833,108.604 147.667,108.833 148.5,109.063L 149.5,108L 150,108.5L 149,109.5C 150.333,110.385 151.92,110.975 153,112.156C 153.681,112.9 153.589,114.094 154.031,115C 154.625,116.217 155.799,117.178 156.094,118.5C 156.385,119.808 155.833,121.167 155.703,122.5C 155.573,123.833 155.825,125.262 155.313,126.5C 154.846,127.625 153.708,128.333 152.906,129.25C 152.104,130.167 151.489,131.289 150.5,132C 149.632,132.625 148.5,132.76 147.5,133.141C 146.5,133.521 145.565,134.181 144.5,134.281C 143.325,134.391 142.167,133.927 141,133.75C 139.833,133.573 138.571,133.714 137.5,133.219C 136.404,132.712 135.667,131.646 134.75,130.859C 133.833,130.073 132.636,129.527 132,128.5C 131.167,127.156 131,125.5 130.5,124L 130,123.5C 130.13,122.167 130.26,120.833 130.391,119.5C 130.521,118.167 130.18,116.697 130.781,115.5C 131.669,113.731 133.217,112.359 134.656,111C 135.315,110.378 136.219,110.083 137,109.625 Z "/>
+				<Path x:Name="Path_59_Copy" Width="21.951" Height="22.313" Canvas.Left="132.083" Canvas.Top="109.562" Stretch="Fill" Data="F1 M 137,109.625L 136,108.5L 136.5,108C 137.167,108.344 137.752,108.972 138.5,109.031C 139.36,109.1 140.167,108.583 141,108.359C 141.833,108.135 142.637,107.685 143.5,107.688C 144.364,107.69 145.167,108.146 146,108.375C 146.833,108.604 147.667,108.833 148.5,109.063L 149.5,108L 150,108.5L 149,109.5C 150.333,110.385 151.92,110.975 153,112.156C 153.681,112.9 153.589,114.094 154.031,115C 154.625,116.217 155.799,117.178 156.094,118.5C 156.385,119.808 155.833,121.167 155.703,122.5C 155.573,123.833 155.825,125.262 155.313,126.5C 154.846,127.625 153.708,128.333 152.906,129.25C 152.104,130.167 151.489,131.289 150.5,132C 149.632,132.625 148.5,132.76 147.5,133.141C 146.5,133.521 145.565,134.181 144.5,134.281C 143.325,134.391 142.167,133.927 141,133.75C 139.833,133.573 138.571,133.714 137.5,133.219C 136.404,132.712 135.667,131.646 134.75,130.859C 133.833,130.073 132.636,129.527 132,128.5C 131.167,127.156 131,125.5 130.5,124L 130,123.5C 130.13,122.167 130.26,120.833 130.391,119.5C 130.521,118.167 130.18,116.697 130.781,115.5C 131.669,113.731 133.217,112.359 134.656,111C 135.315,110.378 136.219,110.083 137,109.625 Z " ForceCursor="True">
+					<Path.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FFFBDEDE" Offset="1"/>
+							<GradientStop Color="#FFFEAAAA"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path x:Name="Path_80" Width="61.8126" Height="148" Canvas.Left="172" Canvas.Top="24" Stretch="Fill" Data="F1 M 172.5,24C 174.056,24.0833 175.611,24.1667 177.167,24.25C 178.722,24.3333 180.278,24.4167 181.833,24.5C 183.389,24.5833 184.995,24.3479 186.5,24.75C 187.311,24.9667 187.716,25.9798 188.5,26.2813C 189.932,26.8321 191.545,26.7625 193,27.25C 194.176,27.6442 195.222,28.3542 196.333,28.9063C 197.444,29.4583 198.556,30.0104 199.667,30.5625C 200.778,31.1146 201.947,31.5633 203,32.2188C 204.399,33.0894 205.667,34.1563 207,35.125C 208.333,36.0938 209.786,36.9162 211,38.0313C 212.364,39.2843 213.458,40.8021 214.688,42.1875C 215.917,43.5729 217.146,44.9583 218.375,46.3438C 219.604,47.7292 220.987,48.9924 222.063,50.5C 222.588,51.237 222.719,52.1907 223.125,53C 223.779,54.3044 224.535,55.5556 225.24,56.8333C 225.944,58.1111 226.649,59.3889 227.354,60.6667C 228.059,61.9444 229.073,63.0955 229.469,64.5C 229.831,65.7837 229.141,67.2347 229.563,68.5C 229.854,69.3737 231.129,69.644 231.469,70.5C 231.838,71.4298 231.521,72.5 231.547,73.5C 231.573,74.5 231.276,75.5624 231.625,76.5C 231.936,77.3368 233.168,77.6396 233.406,78.5C 233.828,80.0263 233.464,81.6667 233.492,83.25C 233.521,84.8333 233.549,86.4167 233.578,88C 233.607,89.5833 233.635,91.1667 233.664,92.75C 233.693,94.3333 233.92,95.9256 233.75,97.5C 233.602,98.869 232.951,100.143 232.719,101.5C 232.522,102.653 232.552,103.833 232.469,105C 232.385,106.167 232.568,107.384 232.219,108.5C 231.972,109.289 231.052,109.73 230.75,110.5C 230.443,111.281 230.552,112.167 230.453,113C 230.354,113.833 230.498,114.734 230.156,115.5C 229.655,116.625 228.49,117.37 228,118.5C 227.386,119.916 227.502,121.576 226.906,123C 226.348,124.335 225.358,125.444 224.583,126.667C 223.809,127.889 223.035,129.111 222.26,130.333C 221.486,131.556 220.842,132.87 219.938,134C 218.787,135.438 217.396,136.667 216.125,138C 214.854,139.333 213.583,140.667 212.313,142C 211.042,143.333 209.92,144.826 208.5,146C 207.785,146.591 206.742,146.663 206,147.219C 205.379,147.684 205.146,148.569 204.5,149C 203.108,149.928 201.478,150.436 200,151.219C 198.643,151.937 196.744,152.157 196,153.5C 195.272,154.814 196.161,156.5 196.242,158C 196.323,159.5 196.404,161 196.484,162.5C 196.565,164 196.646,165.5 196.727,167C 196.807,168.5 196.888,170 196.969,171.5L 172.5,172L 172,171.5L 172.5,24 Z ">
+					<Path.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FFF99999" Offset="0"/>
+							<GradientStop Color="White" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+					<Path.OpacityMask>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="Black" Offset="0"/>
+							<GradientStop Color="White" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.OpacityMask>
+				</Path>
+				<Path x:Name="path1" Data="M61.044631,0 L61.406409,0.42285156 C61.828406,1.9491501 61.464408,3.58955 61.492408,5.1728516 61.521407,6.7561493 61.549407,8.3395538 61.578406,9.9228516 61.607406,11.506149 61.635406,13.089554 61.664405,14.672852 61.693412,16.256149 61.920409,17.84845 61.750411,19.422852 61.602408,20.791855 60.951407,22.065849 60.719405,23.422852 60.522399,24.575851 60.552398,25.755852 60.469398,26.922852 60.385398,28.089851 60.568404,29.306854 60.219398,30.422852 59.972396,31.211853 59.05239,31.652855&#xd;&#xa;58.750388,32.422852 58.443389,33.20385 58.55239,34.089851 58.453384,34.922852 58.354384,35.755852 58.498389,36.656853 58.156386,37.422852 57.655379,38.547852 56.490371,39.292854 56.000373,40.422852 55.386367,41.838852 55.502364,43.498848 54.906364,44.922852 54.348357,46.257851 53.358352,47.366852 52.58335,48.589851 51.809341,49.811852 51.035339,51.033852 50.260329,52.255852 49.486327,53.478851 48.842323,54.792854 47.938316,55.922852 46.787307,57.360855&#xd;&#xa;45.396301,58.589851 44.125289,59.922852 42.854286,61.255852 41.583274,62.589851 40.31327,63.922852 39.042259,65.255852 37.920249,66.748848 36.500244,67.922852 35.78524,68.513855 34.742233,68.585854 34.000228,69.141853 33.379219,69.60685 33.146217,70.491852 32.500213,70.922852 31.108207,71.850845 29.478195,72.358856 28.000183,73.141846 26.64318,73.859848 24.744163,74.079849 24.00016,75.422852 23.272155,76.736847 24.161163,78.422852 24.242164,79.922852&#xd;&#xa;24.323166,81.422852 24.404159,82.922852 24.484161,84.422852 24.565162,85.922852 24.646164,87.422852 24.727165,88.922852 24.807167,90.422852 24.888168,91.922852 24.969169,93.422852 L0.50000381,93.922852 1.4210854E-14,93.422852 0.17643356,41.375603 2.2245788,41.664703 C4.0419502,41.835403 5.8859366,41.922852 7.7520026,41.922852 33.876937,41.922852 55.67369,24.783752 60.714675,1.9995918 z" Height="93.923" Canvas.Left="172" Stretch="Fill" Canvas.Top="78.077" Width="61.813" Fill="#FFFF4B4B">
+					<Path.OpacityMask>
+						<RadialGradientBrush Center="0.373,0.932" GradientOrigin="0.373,0.932" RadiusY="0.652" RadiusX="0.94">
+							<GradientStop Color="#4E000000" Offset="1"/>
+							<GradientStop Color="#91FFFFFF"/>
+						</RadialGradientBrush>
+					</Path.OpacityMask>
+				</Path>
+				<Path x:Name="Path_84" Width="37.4065" Height="38.6952" Canvas.Left="174" Canvas.Top="101.535" Stretch="Fill" Fill="#FF747474" Data="F1 M 174.5,126L 174,125.5C 174.063,124.056 174.125,122.611 174.188,121.167C 174.25,119.722 174.313,118.278 174.375,116.833C 174.438,115.389 173.958,113.813 174.563,112.5C 175.28,110.94 176.917,110 178.094,108.75C 179.271,107.5 180.209,105.972 181.625,105C 182.933,104.102 184.583,103.854 186.063,103.281C 187.542,102.708 188.923,101.731 190.5,101.563C 192.093,101.392 193.667,102.052 195.25,102.297C 196.833,102.542 198.52,102.417 200,103.031C 201.359,103.595 202.333,104.823 203.5,105.719C 204.667,106.615 206.027,107.303 207,108.406C 207.626,109.116 207.731,110.154 208.156,111C 208.753,112.187 209.573,113.265 210.063,114.5C 210.44,115.453 210.51,116.5 210.734,117.5C 210.958,118.5 211.419,119.475 211.406,120.5C 211.388,121.939 210.896,123.333 210.641,124.75C 210.385,126.167 210.43,127.672 209.875,129C 209.392,130.156 208.365,131 207.609,132C 206.854,133 206.27,134.156 205.344,135C 204.533,135.739 203.4,136.029 202.5,136.656C 201.779,137.159 201.326,138.074 200.5,138.375C 199.239,138.835 197.785,138.456 196.5,138.844C 195.731,139.076 195.296,140.084 194.5,140.188C 193.003,140.382 191.5,139.854 190,139.688C 188.5,139.521 186.921,139.697 185.5,139.188C 184.335,138.77 183.552,137.652 182.5,137C 181.712,136.512 180.703,136.385 180,135.781C 178.972,134.899 178.281,133.688 177.422,132.641C 176.563,131.594 175.389,130.74 174.844,129.5C 174.372,128.427 174.615,127.167 174.5,126 Z "/>
+				<Path x:Name="Path_84_Copy" Width="33.177" Height="34.32" Canvas.Left="176.083" Canvas.Top="103.618" Stretch="Fill" Data="F1 M 174.5,126L 174,125.5C 174.063,124.056 174.125,122.611 174.188,121.167C 174.25,119.722 174.313,118.278 174.375,116.833C 174.438,115.389 173.958,113.813 174.563,112.5C 175.28,110.94 176.917,110 178.094,108.75C 179.271,107.5 180.209,105.972 181.625,105C 182.933,104.102 184.583,103.854 186.063,103.281C 187.542,102.708 188.923,101.731 190.5,101.563C 192.093,101.392 193.667,102.052 195.25,102.297C 196.833,102.542 198.52,102.417 200,103.031C 201.359,103.595 202.333,104.823 203.5,105.719C 204.667,106.615 206.027,107.303 207,108.406C 207.626,109.116 207.731,110.154 208.156,111C 208.753,112.187 209.573,113.265 210.063,114.5C 210.44,115.453 210.51,116.5 210.734,117.5C 210.958,118.5 211.419,119.475 211.406,120.5C 211.388,121.939 210.896,123.333 210.641,124.75C 210.385,126.167 210.43,127.672 209.875,129C 209.392,130.156 208.365,131 207.609,132C 206.854,133 206.27,134.156 205.344,135C 204.533,135.739 203.4,136.029 202.5,136.656C 201.779,137.159 201.326,138.074 200.5,138.375C 199.239,138.835 197.785,138.456 196.5,138.844C 195.731,139.076 195.296,140.084 194.5,140.188C 193.003,140.382 191.5,139.854 190,139.688C 188.5,139.521 186.921,139.697 185.5,139.188C 184.335,138.77 183.552,137.652 182.5,137C 181.712,136.512 180.703,136.385 180,135.781C 178.972,134.899 178.281,133.688 177.422,132.641C 176.563,131.594 175.389,130.74 174.844,129.5C 174.372,128.427 174.615,127.167 174.5,126 Z ">
+					<Path.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FFA0F88F" Offset="0"/>
+							<GradientStop Color="#FFD9FDD3" Offset="1"/>
+						</LinearGradientBrush>
+					</Path.Fill>
+				</Path>
+			</Canvas>
+		</Viewbox>
+	</Grid>
+</UserControl>
